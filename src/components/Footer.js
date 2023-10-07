@@ -9,7 +9,7 @@ function Footer() {
         <div>
             <a href="https://www.linkedin.com/in/sara-donnelly-213037229/"><LinkedInIcon /></a>
             <a href="https://github.com/saradonnelly97"><GitHubIcon /></a>
-            <p> &copy; 2023 slugzillastudio.com</p>
+            <p> &copy; 2023.</p>
         </div>
     </div>
   )

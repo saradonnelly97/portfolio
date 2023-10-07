@@ -1,21 +1,50 @@
-import React from "react";
-import ProjectItem from "../components/ProjectItem";
+import React, { useState } from "react";
+// import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
+import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined';
 
 import "../styles/Projects.css";
 
 function Projects() {
+  const[items, setItems] = useState(ProjectList)
+  const filterItem = (categoryItem) => {
+    const updatedItems = ProjectList.filter((curElem) => {
+      return curElem.category === categoryItem;
+    })
+
+    setItems(updatedItems);
+  }
   return (
-    <div className="projects">
-      <h1> My Personal Projects</h1>
-      <div className="projectList">
-        {ProjectList.map((project, index) => {
+    <section className="work container section" id="work">
+      <h2 className="section__title"> Recent Works</h2>
+
+      <div className="work__filters">
+        <span className="work__item"onClick={() => setItems(ProjectList)}>Everything</span>
+        <span className="work__item" onClick={() => filterItem("Creative")}>Creative</span>
+        <span className="work__item" onClick={() => filterItem("Art")}>Art</span>
+        <span className="work__item" onClick={() => filterItem("Design")}>Design</span>
+        <span className="work__item" onClick={() => filterItem("Branding")}>Branding</span>
+      </div>
+
+      <div className="work__container grid">
+        {items.map((elem) => {
+          const{ id, image, title, category } = elem;
           return (
-            <ProjectItem id={index} name={project.name} image={project.image} />
-          );
+            <div className="work__card" key={id}>
+              <div className="work__thumbnail">
+                <img src={image} alt="" className="work__img" />
+                <div className="work__mask"></div>
+              </div>
+              <span className="work__category">{category}</span>
+              <h3 className="work__title">{title}</h3>
+              <a href="#" className="work__button">
+                <OpenInNewOutlinedIcon />
+              </a>
+            </div>
+          )
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

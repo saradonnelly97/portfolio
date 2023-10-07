@@ -1,61 +1,35 @@
-.home {
-    width: 100%;
-    align-items: center;
-    font-family: "Arial", sans-serif;
-    color: #3e497a;
+.home { 
+  position: relative; 
+  min-height: 100vh; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
   }
   
-  .about {
-    width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .bio {
+    max-width: 540px;
     text-align: center;
-    background-color: #21325e;
-    color: #f0f0f0;
   }
   
-  .about h2 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
-    color: #e9d35b;
-    height: 50px;
-  }
-  
-  .about .prompt {
-    width: 40%;
-    font-size: 30px;
-  }
-  .prompt svg {
-    font-size: 60px;
-    margin: 5px;
-    color: white;
-  }
-  
-  .skills {
-    font-size: 35px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .skills h1 {
-    color: #3e497a;
-  }
-  
-  .skills .list {
-    list-style: none;
-    width: 60%;
-  }
-  
-  .list span {
-    font-size: 20px;
-  }
-  
-.a {
-    text-decoration: none;
+.home__name {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+}
+
+.home__socials {
+  display: flex; 
+  justify-content: center;
+  column-gap: 1.75rem;
+  margin: 1.5rem;
+}
+
+.home__social-link {
+  color: var(--title-color); 
+  font-size: 1.3rem; 
+  transition: .3s;
+}
+
+.home__social-link:hover {
+  color: hsl(43, 100%, 68%);
 }

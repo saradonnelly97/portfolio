@@ -1,50 +1,26 @@
 import React from 'react';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import "../styles/Home.css"; 
+import "../styles/Home.css";
+import HeaderSocials from '../components/HeaderSocials'; 
 
 
 function Home() {
     return (
-      <div className="home">
-        <div className="about">
-          <h2> Hi, My Name is Sara</h2>
-          <div className="prompt">
+      <section className="home container" id="home">
+        <div className="bio">
+          <h1 className="home__name"> Hi, My Name is Sara</h1>
+          <span className="home__education">
             <p>An illustrator turned software developer with a passion for learning and creating.</p>
-            <LinkedInIcon />
-            <MailOutlineIcon />
-            <GitHubIcon />
+          </span>
+
+          <HeaderSocials />
+
+          
+
+          <a href="#contact" className='btn'>Hire Me</a>
+          
+         
           </div>
-        </div>
-        <div className="skills">
-          <h1> Skills</h1>
-          <ol className="list">
-            <li className="item">
-              <h2> Front-End</h2>
-              <span>
-                ReactJS, Redux, HTML, CSS,
-                BootStrap, MaterialUI, StyledComponents
-              </span>
-            </li>
-            <li className="item">
-              <h2>Back-End</h2>
-              <span>
-                NodeJS, ExpressJS, 
-                 MongoDB
-              </span>
-            </li>
-            <li className="item">
-              <h2>Languages</h2>
-              <span>JavaScript</span>
-            </li>
-            <li className="item">
-              <h2>Software</h2>
-              <span>Adobe Creative Suite, ProCreate, ClipStudio Paint, Blender</span>
-            </li>
-          </ol>
-        </div>
-      </div>
+        </section>
     );
   }
   
