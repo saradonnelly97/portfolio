@@ -13,23 +13,26 @@ function Contact() {
                 <p className="contact__details">Don't like forms? Send me an email.</p>
             </div>
 
-            <form action="" className="contact__form">
+            <form action="https://formsubmit.co/sara.donnelly8@gmail.com" method="POST" className="contact__form">
+                <input type="text" name="_honey" style="display: none;"/>
+                <input type="hidden" name="_captcha" value="false" />
+                
                 <div className="contact__form-group">
                     <div className="contact__form-div">
-                        <input type="text" className="contact__form-input" placeholder="Insert your name" />
+                        <input type="text" name="Name" className="contact__form-input" placeholder="Last Name, First Name" />
                     </div>
 
                     <div className="contact__form-div">
-                        <input type="email" className="contact__form-input" placeholder="Insert your email" />
+                        <input type="text" name="Subject" className="contact__form-input" placeholder="Insert your subject" />
                     </div>
 
                     <div className="contact__form-div">
-                        <input type="text" className="contact__form-input" 
-                        placeholder="Insert your subject" />
+                        <input type="email" name="Email" className="contact__form-input" 
+                        placeholder="Insert your email" />
                     </div>
 
                     <div className="contact__form-div contact__form-area">
-                        <textarea name="" 
+                        <textarea name="Message" 
                         id="" 
                         cols="30" 
                         rows="10" 
