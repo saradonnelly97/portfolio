@@ -14,8 +14,6 @@ function Contact() {
             </div>
 
             <form action="https://formsubmit.co/sara.donnelly8@gmail.com" method="POST" className="contact__form">
-                <input type="text" name="_honey" style="display: none;"/>
-                <input type="hidden" name="_captcha" value="false" />
                 
                 <div className="contact__form-group">
                     <div className="contact__form-div">

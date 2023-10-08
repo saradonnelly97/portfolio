@@ -16,7 +16,7 @@ function Home() {
 
           
 
-          <a href="/about" className='btn'>Meet Me!</a>
+          {/* <a href="/about" className='btn'>Meet Me!</a> */}
           
          
           </div>
