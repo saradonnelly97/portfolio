@@ -16,9 +16,9 @@ function Home() {
 
           
 
-          <Link to="/about">
+          {/* <Link to = "/about">
             <button>Meet Me!</button>
-          </Link>
+          </Link> */}
           
          
           </div>
