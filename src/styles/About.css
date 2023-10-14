@@ -1,13 +1,17 @@
 .about__container {
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 4fr 9fr;
     column-gap: 1.875rem;
 }
-
+.about__img {
+    border-radius: 20rem;
+    border: 3px solid black;
+}
 .about__data {
     padding: 2.5rem;
     background-color: var(--container-color);
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
+    border: var(--border);
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1.875rem;
@@ -21,7 +25,6 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 15px solid var(--container-color);
     position: absolute;
     left: -0.93rem;
     top: 20%;
@@ -67,17 +70,17 @@
 
 .development {
     width: 90%; 
-    background-color: rgb(255, 209, 92);
+    background-color: rgb(71, 194, 59);
 }
 
 .ui__design {
     width: 80%; 
-    background-color: rgb(255, 76, 96);
+    background-color: rgb(124, 76, 255);
 }
 
 .illustration {
     width: 60%; 
-    background-color: rgb(108, 108, 299);
+    background-color: rgb(212, 25, 72);
 }
 
 .about__boxes {

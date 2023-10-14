@@ -1,14 +1,15 @@
 code {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Source Code Pro', monospace;
 }
 
 :root { 
-  --first-color: hsl(353, 100%, 65%);
-  --title-color: hsl(244, 24%, 26%);
-  --text-color: hsl(244, 16%, 43%);
+  --first-color: hsl(0, 0%, 0%);
+  --title-color: hsl(0, 0%, 0%);
+  --text-color: hsl(0, 0%, 45%);
   --body-color: hsl(258, 60%, 98%);
   --container-color: #fff;
-  --body-font: 'Comfortaa', cursive;
+  --border: 4px solid black;
+  --body-font: 'Source Code Pro', monospace;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
@@ -18,8 +19,9 @@ code {
   --font-medium: 500;
   --font-semibold: 600; 
   --font-bold: 700;
-  --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+  --shadow: 0px 5px 0px 0px rgb(0, 0, 0);
   --border-radius: 20px;
+ 
 }
 
 @media screen and (max-width: 1024px) {
@@ -70,6 +72,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000;
+}
+nav a:hover {
+  color: #8c8c8c;
+  transition: color 0.5s;
 }
 
 button {
@@ -108,32 +115,21 @@ img {
   margin-bottom: 3.75rem;
 }
 
-/* .section__title::before {
-  content: '';
-} */
-
 .btn {
   padding: 0.75rem 2rem;
   line-height: 1;
   border-radius: 1.875rem;
-  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
-  border: 1px solid transparent;
-  color: #fff; 
+  box-shadow: -2px 2px 0px rgb(0 0 0 / 100%);
+  border: 3px solid black;
+  color: #000000; 
   display: inline-block; 
-  background-color: var(--first-color);
+  background-color: var(--body-color);
   font-weight: var(--font-bold);
-}
-
-@keyframes button-push {
-  50% {
-    transform: scale(0.8);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+  font-size: 1.34rem;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
-  animation: button-push 0.3s linear 1;
+  transform: scale(0.97);
+  box-shadow: none;
 }

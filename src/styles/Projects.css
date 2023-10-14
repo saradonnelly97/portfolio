@@ -22,12 +22,13 @@
 .work__card {
   position: relative;
   overflow: hidden;
+  border: var(--border);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
 
 .work__mask {
-  background: #6c6ce5;
+  background: #cacaca;
   position: absolute; 
   left: 0;
   top: 0;
@@ -73,7 +74,7 @@
   left: 1.5rem; 
   font-size: var(--h3-font-size);
   display: block; 
-  background-color: #ffd15c;
+  background-color: #461aa3;
   height: 40ps;
   width: 40px;
   cursor: pointer; 
