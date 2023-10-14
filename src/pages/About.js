@@ -17,7 +17,9 @@ const About = () => {
                     <p className="about__description">
                         I am Sara Donnelly, a full-stack web developer from the Carolinas. I have experience in web site design and building and customization.
                     </p>
-                    <a href="/projects" className="btn">Project List</a>
+                    <Link to="/projects">
+                        <button>Project List</button>
+                    </Link>
                 </div>
 
                 <div className="about__skills grid">

@@ -16,7 +16,9 @@ function Home() {
 
           
 
-          <a href="/about" className='btn'>Meet Me!</a>
+          <Link to="/about">
+            <button>Meet Me!</button>
+          </Link>
           
          
           </div>
