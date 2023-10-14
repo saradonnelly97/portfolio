@@ -7,7 +7,7 @@ import AboutBox from '../components/AboutBox';
 const About = () => {
   return (
     <section className="about container section" id='about'>
-        <h2 className="section__title">About Me</h2>
+        <h3 className="section__title">About Me</h3>
 
         <div className="about__container grid">
             <img src={Image} alt="" className="about__img" />
