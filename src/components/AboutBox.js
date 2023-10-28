@@ -5,7 +5,7 @@ function AboutBox() {
     <div className="about__boxes grid">
         <div className="about__box">
             <div>
-                <h3 className="about__title">83</h3>
+                <h3 className="about__title">87</h3>
                 <span className="about__subtitle">GitHub Projects Completed <i>(and counting!)</i></span>
             </div>
         </div>
